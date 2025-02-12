@@ -35,35 +35,16 @@
             align-items: center;
             justify-content: center;
             margin: 0 auto 1.5rem;
-        }
-
-        .checkmark {
-            width: 32px;
-            height: 32px;
             position: relative;
         }
 
-        .checkmark::before,
-        .checkmark::after {
-            content: '';
-            position: absolute;
-            background: white;
-        }
-
-        .checkmark::before {
-            width: 3px;
-            height: 16px;
+        .checkmark {
             transform: rotate(45deg);
-            right: 12px;
-            top: 4px;
-        }
-
-        .checkmark::after {
-            width: 3px;
-            height: 24px;
-            transform: rotate(-45deg);
-            right: 22px;
-            top: 0;
+            height: 40px;
+            width: 20px;
+            border-bottom: 4px solid #ffffff;
+            border-right: 4px solid #ffffff;
+            margin-top: -8px;
         }
 
         h1 {
@@ -81,24 +62,6 @@
             color: #b3b3b3;
             font-size: 1.1rem;
         }
-
-        .button {
-            display: inline-block;
-            margin-top: 2rem;
-            padding: 0.8rem 2rem;
-            background: linear-gradient(45deg, #7c4dff, #448aff);
-            border: none;
-            border-radius: 2rem;
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(124, 77, 255, 0.3);
-        }
     </style>
 </head>
 <body>
@@ -107,8 +70,7 @@
             <div class="checkmark"></div>
         </div>
         <h1>Payment Details Saved</h1>
-        <p>Your payment information has been securely stored for future transactions. You can now proceed with faster checkouts.</p>
-        <a href="#" class="button">Continue Shopping</a>
+        <p>Your payment information has been securely stored for future transactions.</p>
     </div>
 </body>
 </html>
